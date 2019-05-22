@@ -1,0 +1,65 @@
+<!--查看全部-->
+<view class='content squaregamespage'>
+  <view class='main'>
+    <view class='group-list'>
+      <view class='item suggest-square-list'>
+        <view class='square-lottery normal-square-lottery-component'  wx:for='{{2}}' wx:key='list'>
+          <view class="end-status" wx:if='{{true}}'>
+            <view class="circle">已结束</view>
+          </view>
+          <view class="prize-image">
+            <image src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+          </view>
+          <view class="prize-info">
+            <view class="name">
+                <text>奖品：</text>
+                <text>PDC酒粕酒糟面膜PDC酒粕酒糟面膜x6</text>
+            </view>
+            <view class="lottery-type" >
+                05月17日 10:00 自动开奖
+            </view>
+            <view class="tags">
+              <view class="tag shop_prize">
+                  <text>商城奖品</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='square-lottery normal-square-lottery-component' wx:for='{{2}}' wx:key='list'>
+          <!-- 是否显示已经结束 -->
+          <view class="end-status" wx:if='{{false}}'>
+            <view class="circle">已结束</view>
+          </view>
+          <view class="prize-image">
+            <image src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+          </view>
+          <view class="prize-info">
+            <view class="name">
+                <text>奖品：</text>
+                <text>PDC酒粕酒糟面x6</text>
+            </view>
+            <view class="lottery-type" >
+                05月17日 10:00 自动开奖
+            </view>
+            <view class="tags">
+              <view class="tag red len" >
+                  <image src="/images/icn-v2@3x.png"></image>
+                  <text>微回收</text>
+              </view>
+              <!-- <view class="tag red">
+                  <image src="/images/icn-v2@3x.png"></image>
+                  <text></text>
+              </view> -->
+              <!-- <view class="tag shop_prize">
+                  <text>商城奖品</text>
+              </view> -->
+            </view>
+          </view>  
+        </view>
+      </view>
+    </view>
+    <view class="square-loadmore" hoverClass="highlight" wx:if="{{true}}">
+      <text>{{false?'加载中...':'加载更多'}}</text>
+    </view>
+  </view>
+</view>

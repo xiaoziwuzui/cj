@@ -1,0 +1,126 @@
+<!-- 我的 页面 -->
+<view class='profilepage'>
+  <view class='user-profile'>
+    
+    <view class="follow-official-account" wx:if="{{!hideFollowBar&&platform!=='qq'}}">
+      <image class="heart-icn" src="/images/icn-loveit@3x.png"></image>
+      <view class="desc">喜欢抽奖，就添加到我的小程序</view>
+      <image class="guide-arrow-icn" src="/images/icn-arrow-guide@3x.png"></image>
+      <view class="pendding"></view>
+      <image bindtap="closeFollowBar" class="close" hoverClass="highlight" src="/images/icn-close@3x.png"></image>
+    </view>
+    
+    <view class='user-profile-dashboard'>
+      <!-- 个人信息 -->
+      <view class="user-info" hoverClass="highlight">
+        <view class="user-info-content">
+            <image class="user-info-avatar" src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+            <view class="user-info-name">长沙大波哥</view>
+        </view>
+        <block wx:if="{{true}}">
+            <text class="dot" wx:if="{{true}}"></text>
+            <view class="user-address-content">
+                <text wx:if="{{true}}">心愿 {{profile.points}}</text>
+                <text wx:else>心愿</text>
+                <text class="arrow-right"></text>
+            </view>
+        </block>
+      </view>
+      <!-- game-info -->
+      <view class="game-info">
+        <view bindtap="goToUserGames" class="game-info-item game-info-join" data-wpygotousergames-a="all" hoverClass="highlight">
+            <view class="game-info-item-content">
+                <view class="game-info-count">1</view>
+              <view class="game-info-label">全部抽奖</view>
+            </view>
+        </view>
+        <view bindtap="goToUserGames" class="game-info-item game-info-create" hoverClass="highlight">
+            <view class="game-info-item-content">
+                <view class="game-info-count">0</view>
+                <view class="game-info-label">发起抽奖</view>
+            </view>
+        </view>
+        <view bindtap="goToUserGames" class="game-info-item game-info-winner"hoverClass="highlight">
+            <view class="game-info-item-content">
+                <view class="game-info-count">0</view><view class="game-info-label">中奖记录</view>
+            </view>
+        </view>
+      </view>
+    </view>
+    <!-- infos -->
+    <view class="infos" wx:if="true">
+      <view bindtap="goToAccount" class="sorry info-item" hoverClass="highlight">
+          <image src="/images/icn-account@3x.png"></image>
+          <text>余额</text>
+          <text class="arrow-right"></text>
+      </view>
+      <view class="info-split-line"></view>
+      <view bindtap="goToStore" class="sorry info-item" hoverClass="highlight">
+          <image src="/images/icn-store-dark@3x.png"></image>
+          <text>官方商城</text>
+          <text class="tips-name">NoCode Store</text>
+          <text class="arrow-right"></text>
+      </view>
+    </view>
+
+    <view class="infos">
+      <block wx:if="{{true}}">
+          <view bindtap="goToHomepage" class="sorry info-item" hoverClass="highlight">
+              <image src="/images/homepage-new@3x.png"></image>
+              <text>个人主页</text>
+              <text class="dot" wx:if="{{showHomepageRemind}}"></text>
+              <text class="arrow-right"></text>
+          </view>
+          <view class="info-split-line"></view>
+      </block>
+      <view bindtap="goToProManager" class="sorry info-item" hoverClass="highlight">
+          <image src="/images/icn-vip-manage@3x.png"></image>
+          <text>高级版管理</text>
+          <text class="arrow-right"></text>
+      </view>
+      <view class="info-split-line" wx:if="{{true}}"></view>
+      <view bindtap="goToAutoSubmit" class="user-submit info-item" hoverClass="highlight" wx:if="{{true}}">
+          <image src="/images/icn-manage@3x.png"></image>
+          <text class="user-account-label">自助提交管理</text>
+          <text class="user-account-monery" wx:if="{{profile.unused_square_ids.length}}">未使用 ()</text>
+          <text class="arrow-right"></text>
+      </view>
+    </view>
+
+    <view class="infos">
+      <view bindtap="goToCertificate" class="sorry info-item" hoverClass="highlight" wx:if="{{true}}">
+          <image src="/images/icn-certification-profile@3x.png"></image>
+          <text>发起人认证</text>
+          <text class="tips-name">{{certificateName}}</text>
+          <text class="arrow-right"></text>
+      </view>
+      <view class="info-split-line" wx:if="{{true}}"></view>
+        <block wx:if="{{platform!=='qq'}}">
+            <view bindtap="goToBusiness" class="sorry info-item" hoverClass="highlight">
+                <image src="/images/icon-tghz@3x.png"></image>
+                <text>推广合作</text>
+                <text class="arrow-right"></text>
+            </view>
+            <view class="info-split-line"></view>
+        </block>
+        <view bindtap="goToMinaSuggest" class="mina-suggests info-item" hoverClass="highlight" wx:if="{{true}}">
+            <image src="/images/icn-mini-program@3x.png"></image>
+            <text>小程序推荐</text>
+            <text class="arrow-right"></text>
+        </view>
+        <view class="info-split-line" wx:if="{{true}}"></view>
+        <view bindtap="goToMore" class="sorry info-item" hoverClass="highlight">
+            <image src="/images/icn-more@3x.png"></image>
+            <text>更多</text>
+            <image class="badge" src="/images/icn-notification@3x.png" wx:if="{{true}}"></image>
+            <text class="arrow-right"></text>
+        </view>
+      </view>
+      <!-- nocode-banner -->
+      <view bindlongpress="onAnimateStart" class="nocode-banner">
+          <image src="/images/nocode@3x.png"></image>
+          <view class="desc">抽奖超过 500,000,000 人次</view>
+      </view>
+  
+  </view>
+</view>

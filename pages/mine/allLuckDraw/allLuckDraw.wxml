@@ -1,0 +1,60 @@
+<!-- 全部抽奖 -->
+<view class='content usergamespage'>
+  <view class="group" wx:if="{{true}}">
+    <view class="group-label fix">待开奖</view>   
+    <view class='group-list'>
+      <view class='gpc-type-3'>
+        <view class='prize-image'>
+          <image src='https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png'></image>
+        </view>
+        <view class='lottery-info'>
+          <view class='sponsor'></view>
+          <view class='prizes'>
+            <view class='item'>
+              <view class='.gpc-3-prize-desc'>
+                <text class='gpc-3-prize-name'>奖品：PDC酒粕酒糟</text>
+                <text class="gpc-3-prize-icon">×</text>
+                <text class="gpc-3-prize-count">2</text>
+                <image class="gpc-3-prize-group-icon" src="/images/icn-zu@3x.png" wx:if="{{true}}"></image>
+              </view>
+            </view>
+            <view class='lottery-type'>
+               发布后 5 天开奖
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>             
+  </view> 
+
+  <view class="group" wx:if="{{true}}">
+    <view class="group-label fix">已结束</view>   
+    <view class='group-list'>
+      <view class='gpc'>
+        <view class="gpc-2">
+          <view class="gpc-2-prize-name gpc-5-prize-name">
+            奖品:<text wx:for="{{2}}" wx:key="index">{{index!==0?'、':''}}LV超美饺子包</text>
+          </view>
+          <text class="gpc-2-prize-dot {{$GPCPending$isAndroid?'android':'ios'}}">...等</text>
+          <text class="gpc-2-prize-date" wx:if="{{true}}">5月12日</text>
+          <view class="arrow-right"></view>
+        </view>
+      </view>
+    </view>
+    <view class='group-list'>
+      <view class='gpc'>
+        <view class="gpc-2">
+          <view class="gpc-2-prize-name gpc-5-prize-name">
+            奖品:<text wx:for="{{2}}" wx:key="index">{{index!==0?'、':''}}LV超美饺子包</text>
+          </view>
+          <text class="gpc-2-prize-dot {{$GPCPending$isAndroid?'android':'ios'}}">...等</text>
+          <text class="gpc-2-prize-date" wx:if="{{true}}">5月12日</text>
+          <view class="arrow-right"></view>
+        </view>
+      </view>
+    </view>
+  </view>             
+
+</view>
+   
+                                  

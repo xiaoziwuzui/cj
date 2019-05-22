@@ -1,0 +1,33 @@
+/* <!-- 收支明细 --> */
+.main{
+  margin-top: 15px;
+  padding: 0 15px;
+  background-color: #fff
+}
+.main .item:first-child{
+  margin-top: 15px
+}
+.main .item{
+  width: 100%;
+  padding: 15px 0;
+  border-bottom:1rpx solid #e6e6e6;
+  
+}
+.main .item .info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size:16px;
+  color:rgba(0,0,0,0.9);
+}
+.main .item .info .value{
+  color: greenyellow
+}
+.main .item .time{
+  display: flex;
+  justify-content: space-between;
+  font-size:12px;
+  letter-spacing:.3px;
+  color:rgba(0,0,0,0.5);
+
+}

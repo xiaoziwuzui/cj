@@ -1,0 +1,134 @@
+<!-- 首页 -->
+<view class='content'>
+
+  <view class='indexPage'>
+    <view class="points-nav" hoverClass="highlight" bindtap='toWish'>
+      <image src="/images/points@3x.png"></image>
+      <view class="count">1</view>
+      <view class="desc">心愿</view>
+      <view class="nav">去签到<text class="arrow-right"></text></view>
+    </view>
+    <view class="group">
+        <view class="group-label">
+          <view>
+            <image class="official-banner" mode="widthFix" src="/images/official-banner@3x.png"></image>
+          </view>
+          <view class="label-actions">
+              <view class="besponsor" hoverClass="highlight">我要上首页</view>
+              <view class="split"></view>              
+              <view class="share-to-frind buttonfix" hoverClass="highlight" bindtap='share'>分享</view>
+          </view>
+        </view>
+        <!-- 每日福利 -->
+        <view>
+          <view class='group-list official-list'  hoverClass="highlight" wx:for='{{3}}' wx:key='list'>
+            <view >
+              <view class='official-lottery-component'>
+                <view class='prize-image'>
+                <!-- 此图src为随意放置 仅展示用 -->
+                  <image class="official-banner" mode="widthFix" src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+                </view>
+                <view class="lottery-info">
+                  <view class="sponsor">抽奖助手 赞助</view>
+                  <view class='prizes'>
+                    <view class='item'>
+                      奖品：智能磁吸悬浮平衡 | 红点工业设计大奖×500
+                      <image class="group-icon" src="/images/icn-zu@3x.png"></image>
+                    </view>
+                  </view>
+                  <view class='lottery-type'>
+                    05月17日 10:00 自动开奖
+                  </view>
+                  <view class="lottery-conditions">
+                    <view class="label">参与条件：</view>
+                    <view class="list">
+                        <view class="item">
+                          <image src="/images/points@3x.png"></image>
+                          <text>消耗心愿15</text>
+                        </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+    
+    <!-- 自助福利 -->
+    <view class='group'>
+      <view class="group-label">
+        <view class="official-banner">
+            <image src="/images/selfhelp-banner@3x.png" style='width:195px;height:53px'></image>
+        </view>
+      </view>
+      <view class='group-list suggest-square-list'>
+        <view class='square-lottery normal-square-lottery-component' wx:for='{{2}}' wx:key='list' bindtap="goToLottery">
+          <!-- 是否显示已经结束 -->
+          <view class="end-status" wx:if='{{false}}'>
+            <view class="circle">已结束</view>
+          </view>
+          <view class="prize-image">
+            <image src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+          </view>
+          <view class="prize-info">
+            <view class="name">
+                <text>奖品：</text>
+                <text>PDC酒粕酒糟面膜PDC酒粕酒糟面膜x6</text>
+            </view>
+            <view class="lottery-type" >
+                05月17日 10:00 自动开奖
+            </view>
+            <view class="tags">
+              <view class="tag red len" >
+                  <image src="/images/icn-v2@3x.png"></image>
+                  <text>微回收</text>
+              </view>
+              <!-- <view class="tag red">
+                  <image src="/images/icn-v2@3x.png"></image>
+                  <text></text>
+              </view> -->
+              <!-- <view class="tag shop_prize">
+                  <text>商城奖品</text>
+              </view> -->
+            </view>
+          </view>  
+         
+        </view>
+      </view>
+      <view class="group-list normal-square-list">
+        <view class='square-lottery normal-square-lottery-component'  wx:for='{{2}}' wx:key='list'>
+          <view class="end-status" wx:if='{{true}}'>
+            <view class="circle">已结束</view>
+          </view>
+          <view class="prize-image">
+            <image src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
+          </view>
+          <view class="prize-info">
+            <view class="name">
+                <text>奖品：</text>
+                <text>PDC酒粕酒糟面膜PDC酒粕酒糟面膜x6</text>
+            </view>
+            <view class="lottery-type" >
+                05月17日 10:00 自动开奖
+            </view>
+            <view class="tags">
+              <view class="tag shop_prize">
+                  <text>商城奖品</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="square-loadmore" hoverClass="highlight" bindtap="loadMoreSquare">
+            <text>查看全部</text>
+            <text class="arrow-right"></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="contact-us">
+    <button class="buttonfix" hoverClass="highlight" openType="contact">
+      联系客服<text class="arrow-right"></text>
+    </button>
+  </view>
+</view>

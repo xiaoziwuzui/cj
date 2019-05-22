@@ -1,0 +1,24 @@
+<!-- 余额 -->
+<view class='content'>
+  <view class='main'>
+    <view class='balance-info'>
+      <view class='name'>当前余额</view>
+      <view class='value'>￥0.00</view>
+    </view>
+    <view class='tips'>
+      余额不能用于红包抽奖、高级搬抽奖。每人每天限提 1 笔,最小 1 元,最大2000元。
+    </view>
+    <view class='cash-withdrawal'>
+      去公众号提现
+    </view>
+    <view class='record'>
+      交易记录
+    </view>
+    <view class='cash-withdrawal-info'>
+      提现请至公众号「 <text class='assistant'>抽奖助手</text>」 - 菜单「余额提现」
+    </view>
+  </view>
+  <view class="overtime">
+    未收到提现超过两个工作日？<text class='contact-us'>联系我们</text>
+  </view>
+</view>

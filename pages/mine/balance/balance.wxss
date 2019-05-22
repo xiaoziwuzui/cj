@@ -1,0 +1,75 @@
+/* <!-- 余额 --> */
+.main{
+  border-top: 1px solid #f0f0f0
+}
+.main .balance-info{
+  width: 100%;
+  margin-top: 15px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0 25px 0;
+
+}
+.main .balance-info .name{
+  padding-bottom: 15px;
+  font-size:15px;
+  letter-spacing:.3px;
+  color:rgba(0,0,0,0.5);
+}
+.main .balance-info .value{
+  font-size:30px;
+  font-weight: bolder;
+  color:rgba(0,0,0,0.9);
+  line-height:1.59;
+}
+.main .tips{
+  padding: 15px;
+  font-size:14px;
+  letter-spacing:.3px;
+  color:rgba(0,0,0,0.5);
+  line-height: 25px
+}
+.main .cash-withdrawal{
+  margin: 0 15px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #c0594a;
+  font-size:14px;
+  letter-spacing:.3px;
+  color:#fff;
+  line-height: 45px;
+}
+.main .record{
+  margin: 0 15px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #fff;
+  font-size:14px;
+  letter-spacing:.3px;
+  color:black;
+  line-height: 45px;
+}
+.main .cash-withdrawal-info{
+  margin:0 15px;
+  margin-top: 25px;
+  text-align: center;
+  font-size:14px;
+  letter-spacing:.3px;
+  color:rgba(0,0,0);
+  line-height: 25px
+}
+.main .cash-withdrawal-info .assistant{
+  color: #2e75b2
+}
+.overtime{
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+  font-size:14px;
+  letter-spacing:.3px;
+  color:rgba(0,0,0,.5);
+  text-align: center
+}
+.overtime .contact-us{
+  color: #2e75b2;
+}

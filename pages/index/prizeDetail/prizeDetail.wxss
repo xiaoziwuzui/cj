@@ -1,0 +1,44 @@
+/* <!-- 抽奖详情页 --> */
+.game-rich-text .copy-info {
+    border: solid 3px #e2dfda;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.game-rich-text .copy-info .copy-info-title {
+    margin: 20px 20px 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #716249;
+}
+
+.game-rich-text .copy-info .copy-info-content {
+    margin: 18px 20px 0;
+    padding: 18px 22px;
+    background-color: #f8f7f6;
+    line-height: 1.67em;
+    font-size: 15px;
+    color: rgba(113,98,73,0.7);
+    word-break: break-all;
+    text-align: center;
+}
+
+.game-rich-text .copy-info .copy-button {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #716249;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px auto;
+    opacity: .9;
+}
+
+.game-rich-text .copy-info .copy-button.highlight {
+    background-color: #4f4433;
+}

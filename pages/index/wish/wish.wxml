@@ -1,0 +1,10 @@
+<!-- 心愿 未完成-->
+<view bindtap='toRule'>
+  规则说明
+</view>
+<view bindtap='toBudget'>
+  收支明细
+</view>
+<view bindtap='toExchange'>
+  商品兑换
+</view>

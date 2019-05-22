@@ -1,0 +1,31 @@
+<!-- 规则说明 -->
+<view class='paragraph'>
+  <view class='title'>什么是心愿？</view>
+  <view class='words'>心愿是抽奖助手的专业积分。</view>
+</view>
+
+<view class='paragraph'>
+  <view class='title'>心愿有什么用？</view>
+  <view class='words'>心愿可用于兑换抽奖助手商城优惠券或其他实物奖品。兑换所需额度及可兑换的奖品以兑换页面显示标注为准。优惠券的使用须符合优惠券券面说明及规则。</view>
+</view>
+
+<view class='paragraph'>
+  <view class='title'>如何获得心愿？</view>
+  <view class='words'>每日签到，可获得相应心愿。连续签到获得的心 愿有增加，以实际界面显示为准。</view>
+</view>
+
+<view class='paragraph'>
+  <view class='title'>心愿有有效期吗？</view>
+  <view class='words'>心愿有有效期，以每个自然年结束日，即每年12 月31日晚24点清零。</view>
+</view>
+
+<view class='paragraph'>
+  <view class='title'>心愿的获取和使用有什么限制吗？</view>
+  <view class='words'>任何通过不正当手段（包括但不限于侵犯第三人 合法权益、作弊、扰乱系统、实施网络攻击、批 量注册、用机器注册账户、用机器模拟客户端等 方式）获得心愿的，抽奖助手有权冻结或撤销用 户以此获得的心愿并要求赔偿相关损失。</view>
+</view>
+
+<view class='contact-container'>
+  <button class="buttonfix" hoverClass="highlight" openType="contact">
+    仍有问题？联系客服
+  </button>
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/balance/balance",
+    "pages/mine/mine",
+    "pages/luckDraw/luckDraw",
+    "pages/index/prizeDetail/prizeDetail",
+    "pages/index/wish/wish",
+    "pages/index/wish/exchange/exchange",
+    "pages/index/wish/budget/budget",
+    "pages/index/wish/rules/rules",
+    "pages/mine/allLuckDraw/allLuckDraw",
+    "pages/index/squaregames/squaregames"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#262626",
+    "selectedColor": "#e2453a",
+    "backgroundColor": "#fafafa",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon-list-normal2@3x.png",
+        "selectedIconPath": "images/icon-list-checked2@3x.png"
+      },
+      {
+        "pagePath": "pages/luckDraw/luckDraw",
+        "text": "发起抽奖",
+        "iconPath": "images/icn-new-lottery2@3x.png",
+        "selectedIconPath": "images/icn-new-lottery-checked2@3x.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icon-mine-normal2@3x.png",
+        "selectedIconPath": "images/icon-mine-checked2@3x.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

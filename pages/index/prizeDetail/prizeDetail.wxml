@@ -1,0 +1,13 @@
+<!-- 抽奖详情页 -->
+<view class='content'>
+  <view c>
+    <view class="game-rich-text">
+      <view class="copy-info" wx:if="{{true}}">
+        <view class="copy-info-title">工厂微信一件代发</view>
+        <view class="copy-info-content">111111</view>
+        <view bindtap="copyInfo" class="copy-button" hoverClass="highlight">点此一键复制</view>
+      </view>
+    </view>
+  </view>
+  
+</view>

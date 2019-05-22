@@ -1,0 +1,51 @@
+<!-- 商品兑换 -->
+<view class='content'>
+
+  <view class='main'>
+    <view>
+      <view class='image'>
+        <image src='https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png'></image>
+      </view>
+      <view class='info'>
+        <view class='name'>卫生间毛巾</view>
+        <view class='value'>2 心愿</view>
+      </view>
+    </view>
+    <view class='desc'>
+      <view>
+        买家必读:本品洗洁精低泡去油,温和不伤手.自动生产线灌装，重量不会丝毫不差,有部分产品的生产日期在外箱上生产批次不同，包装不同，形状外观不影响使用，请以实物为准。。破损请及时拍照联系客服进行赔偿。以上请多多粉知悉。如果有需要请联系客服.介意者勿拍，介意者勿拍,随机邮政中通快递，如需指定快递请联系客服备注,如遇特殊情况有可能改发其它快递不另做通知。各别地区有可能需要代收点自提件和有偿取件。
+      </view>
+      <view class='explain'>
+        <view>兑换说明:</view>
+        <view class='explain-list'>兑换成功后可获赠5元抵价券。</view>
+        <view class='explain-list'>券后仅需6.9元即可兑购。</view>
+        <view class='explain-list'>数量有限，兑换即止。</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='exchange'>
+    <view class='exchange-btn' bindtap='showPopupBox'>使用 2 心愿兑换</view>
+  </view>
+</view>
+
+<!-- 弹出层 -->
+<view class="buttom-popup-box-component {{showPopup?'show':''}} animate}}">
+  <view bindtap="censelPopupBox" class="popup-box-cover"></view>
+  <view class="popup-box">
+    <image bindtap="censelPopupBox" class="popup-box-close" src="/images/close@3x.png" wx:if="{{true}}"></image>
+    <view class='content-box'>
+      <view class='image-box'>
+        <image src='https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png'></image>
+      </view>
+      <view class='info'>
+        <view class='name'>卫生间毛巾</view>
+        <view class='value'>2 心愿</view>
+      </view>
+    
+    </view>
+    <view class='exchange'>
+      <view class='exchange-btn'>确认兑换</view>
+    </view>
+  </view>
+</view>

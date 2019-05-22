@@ -1,0 +1,49 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.content{
+  width: 100%;
+  min-height:100vh;
+  background-color:#f0f0f0;
+}
+/* 向右小箭头 */
+.arrow-right {
+    border: solid rgba(0,0,0,0.66);
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    position: relative;
+    margin-left: 5px;
+}
+/* 功能按钮 */
+.buttonfix {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border: none;
+    font-size: inherit;
+    color: inherit;
+    background: inherit;
+    text-align: inherit;
+    line-height: inherit;
+    overflow: initial;
+}
+
+.buttonfix:after {
+    display: none;
+}
+
+.buttonfix:before {
+    display: none;
+}
+.highlight{
+  opacity: .8;
+}
