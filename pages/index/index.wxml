@@ -1,6 +1,5 @@
 <!-- 首页 -->
 <view class='content'>
-
   <view class='indexPage'>
     <view class="points-nav" hoverClass="highlight" bindtap='toWish'>
       <image src="/images/points@3x.png"></image>
@@ -14,9 +13,10 @@
             <image class="official-banner" mode="widthFix" src="/images/official-banner@3x.png"></image>
           </view>
           <view class="label-actions">
-              <view class="besponsor" hoverClass="highlight">我要上首页</view>
-              <view class="split"></view>              
-              <view class="share-to-frind buttonfix" hoverClass="highlight" bindtap='share'>分享</view>
+              <view wx:if="{{shareTicket}}" class="besponsor" hoverClass="highlight" bindtap="showIndex">关闭分享跟踪</view>
+              <view wx:else class="besponsor" hoverClass="highlight" bindtap="showIndex">打开分享跟踪</view>
+              <view class="split"></view> 
+              <button class="share-to-frind buttonfix" hoverClass="highlight" open-type="share">分享</button>   
           </view>
         </view>
         <!-- 每日福利 -->
@@ -131,4 +131,5 @@
       联系客服<text class="arrow-right"></text>
     </button>
   </view>
+  <van-toast id="van-toast" />
 </view>

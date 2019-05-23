@@ -219,6 +219,7 @@
     text-align: left;
     border-radius: 0px;
     padding-right: 0px;
+    border:none;
 }
 
 .profilepage .user-profile .infos .info-item.highlight {

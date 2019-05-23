@@ -44,5 +44,8 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-toast": "components/vant-weapp/toast/index"
+  }
 }

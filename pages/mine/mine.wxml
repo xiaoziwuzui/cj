@@ -13,17 +13,24 @@
     <view class='user-profile-dashboard'>
       <!-- 个人信息 -->
       <view class="user-info" hoverClass="highlight">
-        <view class="user-info-content">
-            <image class="user-info-avatar" src="https://i0.hdslb.com/bfs/archive/fd4147c51f4b2a737b8dec0b2c8623e9786612fa.png"></image>
-            <view class="user-info-name">长沙大波哥</view>
+        <view wsx:if="{{userLoing}}" class="user-info-content">
+            <image class="user-info-avatar" src="{{userInfo.avatar}}"></image>
+            <view class="user-info-name">{{userInfo.nickname}}</view>
         </view>
-        <block wx:if="{{true}}">
+        <view wsx:else class="user-info-content">
+            <open-data type="userAvatarUrl" class="user-info-avatar"></open-data>
+            <view><open-data type="userNickName" class="user-info-name"></open-data></view>
+        </view>
+        <block wx:if="{{userLogin}}">
             <text class="dot" wx:if="{{true}}"></text>
             <view class="user-address-content">
                 <text wx:if="{{true}}">心愿 {{profile.points}}</text>
                 <text wx:else>心愿</text>
                 <text class="arrow-right"></text>
             </view>
+        </block>
+        <block wx:else>
+            <button class="user-address-content" bindtap="getUserInfo" open-type="getUserInfo"><text>授权登录</text></button>
         </block>
       </view>
       <!-- game-info -->
@@ -64,6 +71,15 @@
     </view>
 
     <view class="infos">
+      <form bindsubmit="formSubmit" report-submit="true">
+        <button form-type="submit" class="sorry info-item" hoverClass="highlight">
+          <image src="/images/homepage-new@3x.png"></image>
+          <text>发起推送</text>
+          <text class="dot" wx:if="{{showHomepageRemind}}"></text>
+          <text class="arrow-right"></text>
+        </button>
+      </form>
+      <view class="info-split-line"></view>
       <block wx:if="{{true}}">
           <view bindtap="goToHomepage" class="sorry info-item" hoverClass="highlight">
               <image src="/images/homepage-new@3x.png"></image>
@@ -121,6 +137,6 @@
           <image src="/images/nocode@3x.png"></image>
           <view class="desc">抽奖超过 500,000,000 人次</view>
       </view>
-  
   </view>
+  <van-toast id="van-toast" />
 </view>
