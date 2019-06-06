@@ -12,26 +12,22 @@
     
     <view class='user-profile-dashboard'>
       <!-- 个人信息 -->
-      <view class="user-info" hoverClass="highlight">
-        <view wsx:if="{{userLoing}}" class="user-info-content">
+      <view wx:if="{{userLogin}}" class="user-info" hoverClass="highlight">
+        <view class="user-info-content">
             <image class="user-info-avatar" src="{{userInfo.avatar}}"></image>
             <view class="user-info-name">{{userInfo.nickname}}</view>
         </view>
-        <view wsx:else class="user-info-content">
-            <open-data type="userAvatarUrl" class="user-info-avatar"></open-data>
-            <view><open-data type="userNickName" class="user-info-name"></open-data></view>
-        </view>
-        <block wx:if="{{userLogin}}">
-            <text class="dot" wx:if="{{true}}"></text>
+        <block>
+            <text class="dot"></text>
             <view class="user-address-content">
                 <text wx:if="{{true}}">心愿 {{profile.points}}</text>
                 <text wx:else>心愿</text>
                 <text class="arrow-right"></text>
             </view>
         </block>
-        <block wx:else>
-            <button class="user-address-content" bindtap="getUserInfo" open-type="getUserInfo"><text>授权登录</text></button>
-        </block>
+      </view>
+      <view wx:else class="user-info" hoverClass="highlight">
+          <button class="auth-btn" bindtap="getUserInfo" open-type="getUserInfo"><text>授权登录</text></button>
       </view>
       <!-- game-info -->
       <view class="game-info">
@@ -72,7 +68,7 @@
 
     <view class="infos">
       <form bindsubmit="formSubmit" report-submit="true">
-        <button form-type="submit" class="sorry info-item" hoverClass="highlight">
+        <button form-type="submit" class="sorry info-item send-push" hoverClass="highlight">
           <image src="/images/homepage-new@3x.png"></image>
           <text>发起推送</text>
           <text class="dot" wx:if="{{showHomepageRemind}}"></text>

@@ -128,6 +128,19 @@
     margin-right: 15px;
 }
 
+.profilepage .user-profile .user-profile-dashboard .user-info .auth-btn {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: #bb7c38;
+    font-weight: bold;
+}
+
+
 .profilepage .user-profile .user-profile-dashboard .user-info .user-address-content.highlight {
     color: rgba(128,128,128,0.4);
 }
@@ -220,6 +233,15 @@
     border-radius: 0px;
     padding-right: 0px;
     border:none;
+}
+
+.profilepage .user-profile .infos .info-item.send-push {
+    border-radius: 0;
+    border:none;
+}
+.profilepage .user-profile .infos .info-item.send-push::after {
+  border:none;
+  border-radius: 0;
 }
 
 .profilepage .user-profile .infos .info-item.highlight {
@@ -316,7 +338,7 @@
 /* .nocode-banner */
 .profilepage .nocode-banner {
     margin-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     text-align: center;
 }
 

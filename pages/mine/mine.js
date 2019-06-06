@@ -5,6 +5,7 @@ const app = getApp();
 Page({
   data: {
     userLogin: false,
+    hideFollowBar:false,
     userInfo:null
   },
   /**
@@ -15,13 +16,17 @@ Page({
       url: 'allLuckDraw/allLuckDraw',
     })
   },
+  closeFollowBar:function(){
+    this.setData({
+      hideFollowBar: true
+    });
+  },
   goToAccount: function() {
     wx.navigateTo({
       url: 'balance/balance',
     })
   },
   formSubmit: function(res) {
-    console.log(res);
     util.request({
       url: util.api.upFormId,
       type:"POST",
@@ -45,14 +50,17 @@ Page({
   },
   getUserInfo(res){
     var self = this;
+    util.loading('快捷登录中...');
     User.login(function(res){
-      console.log(res);
       app.globalData.userInfo = res;
+      util.closeLoading();
       self.setData({
+        userInfo: res,
         userLogin: true
       });
     },function(){
-
+      util.closeLoading();
+      util.msg('登录失败');
     });
   
   },
@@ -63,10 +71,12 @@ Page({
     var userInfo = app.globalData.userInfo;
     if (userInfo) {
       this.setData({
+        userInfo: userInfo,
         userLogin: true
       });
     } else {
       this.setData({
+        userInfo:null,
         userLogin: false
       });
     }
